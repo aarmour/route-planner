@@ -1,6 +1,6 @@
 import { provideRouter, RouterConfig } from '@angular/router';
 
-import { routesRoutes } from './routes/routes.routes';
+import { routesRoutes } from './routes';
 
 export const appRoutes: RouterConfig = [
   ...routesRoutes
