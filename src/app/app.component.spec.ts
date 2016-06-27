@@ -10,13 +10,8 @@ import { AppComponent } from '../app/app.component';
 beforeEachProviders(() => [AppComponent]);
 
 describe('App: ', () => {
-  it('should create the app',
-      inject([AppComponent], (app: AppComponent) => {
-    expect(app).toBeTruthy();
-  }));
 
-  it('should have as title \'route-planner works!\'',
-      inject([AppComponent], (app: AppComponent) => {
-    expect(app.title).toEqual('route-planner works!');
+  it('should create the app', inject([AppComponent], (app: AppComponent) => {
+    expect(app).toBeTruthy();
   }));
 });
