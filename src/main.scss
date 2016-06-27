@@ -1,0 +1,15 @@
+@import 'node_modules/normalize.css/normalize';
+
+//
+// Normalize box layout model
+//
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
