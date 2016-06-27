@@ -1,0 +1,8 @@
+<div class="container" [ngClass]="{expanded: isExpanded}">
+  <aside class="sidebar" role="navigation">
+    <ng-content select="rp-off-canvas-sidebar"></ng-content>
+  </aside>
+  <div class="rp-off-canvas-main">
+    <ng-content></ng-content>
+  </div>
+</div>

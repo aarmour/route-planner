@@ -1,8 +1,15 @@
-<mb-map
-  [mbStyle]="'mapbox://styles/mapbox/streets-v9'"
-  [width]="500"
-  [height]="500"
-  [longitude]="-105"
-  [latitude]="39"
-  [zoom]="5"
-></mb-map>
+<rp-off-canvas-layout [isExpanded]="isNavExpanded">
+  <rp-off-canvas-sidebar>
+    SIDE BAR - FPO
+  </rp-off-canvas-sidebar>
+  <rp-off-canvas-main>
+    <mb-map
+      [mbStyle]="'mapbox://styles/mapbox/streets-v9'"
+      [width]="500"
+      [height]="500"
+      [longitude]="-105"
+      [latitude]="39"
+      [zoom]="5"
+    ></mb-map>
+  </rp-off-canvas-main>
+</rp-off-canvas-layout>

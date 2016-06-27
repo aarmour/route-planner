@@ -1,0 +1,31 @@
+$rp-off-canvas-layout-sidebar-width: 16em;
+
+.container {
+  position: relative;
+  transition: all 0.3s ease-out;
+
+  &.expanded {
+    left: $rp-off-canvas-layout-sidebar-width;
+  }
+}
+
+.sidebar {
+  position: absolute;
+  width: 16em;
+  height: 100%;
+  clear: both;
+	overflow: hidden;
+	top: 0;
+	left: -$rp-off-canvas-layout-sidebar-width;
+
+  @media screen and (min-width: 48.25em) {
+    position: static;
+		float: left;
+		width: 30%;
+		height: 100%;
+  }
+}
+
+.main {
+
+}

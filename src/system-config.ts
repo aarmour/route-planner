@@ -30,7 +30,8 @@ const barrels: string[] = [
   'app',
   'app/shared',
   'app/mapbox',
-  'app/routes'
+  'app/routes',
+  'app/shared/off-canvas-layout',
   /** @cli-barrel */
 ];
 
