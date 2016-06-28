@@ -1,0 +1,116 @@
+$icon-size: 40px;
+$icon-transition: .3s;
+
+$icon-menu-radius: ($icon-size / 14);
+$icon-menu-color: black;
+
+@mixin menu-lines {
+  display: inline-block;
+  height: ($icon-size / 7);
+  width: $icon-size;
+  border-radius: $icon-menu-radius;
+  transition: $icon-transition;
+  background: $icon-menu-color;
+}
+
+.icon {
+  appearance: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: $icon-size;
+  transition: $icon-transition;
+  user-select: none;
+  width: $icon-size;
+  background: transparent;
+  outline: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+
+  > * {
+    display: block;
+  }
+
+  &:hover,
+  &:focus {
+    outline: none;
+  }
+  &::-moz-focus-inner {
+    border: 0;
+  }
+}
+
+.menu-icon {
+  width: auto;
+
+  &.expanded {
+    .lines {
+      background: transparent;
+
+      &::before,
+      &::after {
+        transform-origin: 50% 50%;
+        top: 0;
+        width: $icon-size;
+      }
+
+      &::before {
+        transform: rotate3d(0, 0, 1, 45deg);
+      }
+
+      &::after {
+        transform: rotate3d(0, 0, 1, -45deg);
+      }
+    }
+  }
+}
+
+.lines {
+  @include menu-lines
+  position: relative;
+
+  &::before,
+  &::after {
+    @include menu-lines;
+    content: '';
+    position: absolute;
+    left: 0;
+    transform-origin: ($icon-size / 14) center;
+    width: 100%;
+  }
+
+  &::before {
+    top: ($icon-size / 4);
+  }
+
+  &::after {
+    top: -($icon-size / 4);
+  }
+
+  .expanded & {
+    transform: scale3d(.8, .8, .8);
+  }
+}
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+
+  &:active,
+  &:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+  }
+}
