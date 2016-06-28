@@ -6,6 +6,10 @@ $rp-off-canvas-layout-sidebar-width: 16em;
 
   &.expanded {
     left: $rp-off-canvas-layout-sidebar-width;
+
+    @media screen and (min-width: 48.25em) {
+      left: 0;
+    }
   }
 }
 
