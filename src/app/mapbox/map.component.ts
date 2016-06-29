@@ -22,7 +22,7 @@ export class MapComponent {
   private map: Object;
 
   @Input('mbStyle') style: string;
-  @Input() width: number = 300;
+  @Input() width: number;
   @Input() height: number = 300;
   @Input() latitude: number = 0;
   @Input() longitude: number = 0;
@@ -52,7 +52,7 @@ export class MapComponent {
 
   private getStyles() {
     return {
-      width: `${this.width}px`,
+      width: this.width ? `${this.width}px` : '100%',
       height: `${this.height}px`
     };
   }

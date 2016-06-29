@@ -1,35 +1,42 @@
 $rp-off-canvas-layout-sidebar-width: 16em;
+$rp-off-canvas-layout-transition: all 0.3s ease-out;
 
 .container {
   position: relative;
-  transition: all 0.3s ease-out;
+  left: 0;
+  transition: $rp-off-canvas-layout-transition;
 
   &.expanded {
     left: $rp-off-canvas-layout-sidebar-width;
 
     @media screen and (min-width: 48.25em) {
       left: 0;
+
+      .sidebar {
+        left: 0;
+      }
     }
   }
 }
 
 .sidebar {
   position: absolute;
-  width: 16em;
+  top: 0;
+  left: -$rp-off-canvas-layout-sidebar-width;
+  width: $rp-off-canvas-layout-sidebar-width;
   height: 100%;
   clear: both;
-	overflow: hidden;
-	top: 0;
-	left: -$rp-off-canvas-layout-sidebar-width;
+  overflow: hidden;
+  transition: $rp-off-canvas-layout-transition;
+  background-color: white;
 
   @media screen and (min-width: 48.25em) {
-    position: static;
-		float: left;
-		width: 30%;
-		height: 100%;
+    z-index: 1;
   }
 }
 
 .main {
-
+  @media screen and (min-width: 48.25em) {
+    width: 100%;
+  }
 }
