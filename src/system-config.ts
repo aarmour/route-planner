@@ -33,6 +33,7 @@ const barrels: string[] = [
   'app/routes',
   'app/shared/off-canvas-layout',
   'app/shared/icons',
+  'app/shared/toolbar',
   /** @cli-barrel */
 ];
 

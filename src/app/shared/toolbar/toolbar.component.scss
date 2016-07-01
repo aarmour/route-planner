@@ -1,0 +1,9 @@
+$rp-toolbar-height: 60px;
+$rp-toolbar-padding-y: 5px;
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  height: $rp-toolbar-height;
+  padding: 0 $rp-toolbar-padding-y;
+}

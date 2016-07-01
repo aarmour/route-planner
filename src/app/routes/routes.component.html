@@ -1,4 +1,8 @@
-<rp-menu-icon [isExpanded]="isNavExpanded" (click)="toggleNav()"></rp-menu-icon>
+<rp-toolbar>
+  <rp-toolbar-group>
+    <rp-menu-icon [isExpanded]="isNavExpanded" (click)="toggleNav()"></rp-menu-icon>
+  </rp-toolbar-group>
+</rp-toolbar>
 <rp-off-canvas-layout [isExpanded]="isNavExpanded">
   <rp-off-canvas-sidebar>
     SIDE BAR - FPO

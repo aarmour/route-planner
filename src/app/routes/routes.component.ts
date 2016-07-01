@@ -1,7 +1,11 @@
 import { Component } from '@angular/core';
 
 import { MB_MAP_DIRECTIVES } from '../mapbox';
-import { RP_MENU_ICON_DIRECTIVES, RP_OFF_CANVAS_LAYOUT_DIRECTIVES } from '../shared';
+import {
+  RP_MENU_ICON_DIRECTIVES,
+  RP_OFF_CANVAS_LAYOUT_DIRECTIVES,
+  RP_TOOLBAR_DIRECTIVES
+} from '../shared';
 
 @Component({
   moduleId: module.id,
@@ -11,7 +15,8 @@ import { RP_MENU_ICON_DIRECTIVES, RP_OFF_CANVAS_LAYOUT_DIRECTIVES } from '../sha
   directives: [
     MB_MAP_DIRECTIVES,
     RP_MENU_ICON_DIRECTIVES,
-    RP_OFF_CANVAS_LAYOUT_DIRECTIVES
+    RP_OFF_CANVAS_LAYOUT_DIRECTIVES,
+    RP_TOOLBAR_DIRECTIVES
   ]
 })
 export class RoutesComponent {
