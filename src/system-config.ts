@@ -34,6 +34,7 @@ const barrels: string[] = [
   'app/shared/off-canvas-layout',
   'app/shared/icons',
   'app/shared/toolbar',
+  'app/shared/list',
   /** @cli-barrel */
 ];
 
