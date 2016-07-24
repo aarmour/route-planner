@@ -12,7 +12,8 @@ module.exports = function(defaults) {
       'reflect-metadata/*.js',
       'rxjs/**/*.js',
       '@angular/**/*.js',
-      'mapbox-gl/dist/mapbox-gl.js'
+      'mapbox-gl/dist/mapbox-gl.js',
+      'immutable/dist/immutable.js',
     ]
   });
 };
