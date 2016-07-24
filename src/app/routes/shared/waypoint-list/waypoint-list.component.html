@@ -1,0 +1,10 @@
+<ul>
+  <li *ngFor="let waypoint of waypoints">
+    <rp-waypoint-list-item
+      [waypoint]="waypoint"
+      (update)="onItemUpdate(waypoint, $event)"
+      (delete)="onItemDelete($event)"
+    >
+    </rp-waypoint-list-item>
+  </li>
+</ul>
