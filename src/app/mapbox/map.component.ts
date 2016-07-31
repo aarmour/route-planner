@@ -23,7 +23,7 @@ export class MapComponent {
 
   @Input('mbStyle') style: string;
   @Input() width: number;
-  @Input() height: number = 300;
+  @Input() height: number;
   @Input() latitude: number = 0;
   @Input() longitude: number = 0;
   @Input() zoom: number = 12;
@@ -53,7 +53,7 @@ export class MapComponent {
   private getStyles() {
     return {
       width: this.width ? `${this.width}px` : '100%',
-      height: `${this.height}px`
+      height: this.height ? `${this.height}px` : '100%'
     };
   }
 }
