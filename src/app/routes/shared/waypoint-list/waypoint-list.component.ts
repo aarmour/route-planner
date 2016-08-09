@@ -8,7 +8,7 @@ import {
 } from '@angular/core';
 import Immutable = require('immutable');
 
-import { IWaypoint } from '../waypoint';
+import { IWaypoint } from '../../../state/models';
 import { RP_WAYPOINT_LIST_ITEM_DIRECTIVES } from './waypoint-list-item.component';
 
 @Component({

@@ -34,16 +34,18 @@ const barrels: string[] = [
   'app',
   'app/mapbox',
   'app/routes',
+  'app/routes/places',
+  'app/routes/shared',
+  'app/routes/shared/waypoint-list',
   'app/sandbox',
   'app/shared',
   'app/shared/icons',
   'app/shared/list',
   'app/shared/off-canvas-layout',
   'app/shared/toolbar',
-  'app/routes/places',
-  'app/routes/shared',
-  'app/routes/shared/waypoint',
-  'app/routes/shared/waypoint-list',
+  'app/state',
+  'app/state/actions',
+  'app/state/models'
   /** @cli-barrel */
 ];
 

@@ -7,7 +7,7 @@ import {
   Type
 } from '@angular/core';
 
-import { IWaypoint } from '../waypoint';
+import { IWaypoint } from '../../../state/models';
 
 @Component({
   moduleId: module.id,

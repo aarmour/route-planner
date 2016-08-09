@@ -2,7 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import Immutable = require('immutable');
 
 import { RP_LIST_DIRECTIVES } from '../shared';
-import { IWaypoint, Waypoint, RP_WAYPOINT_LIST_DIRECTIVES } from '../routes/shared';
+import { IWaypoint, Waypoint } from '../state/models';
+import { RP_WAYPOINT_LIST_DIRECTIVES } from '../routes/shared';
 
 @Component({
   moduleId: module.id,
